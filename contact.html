@@ -1,0 +1,54 @@
+  <!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1.0" lang="eng-US">
+        <title>Contact- My Web Application</title>
+    </head>
+    <style>
+
+a{
+    font-family: captain redemption;
+    font-size: 40px;
+    margin: 10px;
+    background-color: rgb(179, 41, 17);
+    border-radius: 3px;
+    color: black;
+}
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    
+}
+    </style>
+    <body>
+        <?php include'header.html';?>
+        <div class="bg-img">
+                
+                <div class="container">
+                <div class="topnav">
+                <a href="header.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://ann910.wordpress.com/">Blog</a>
+                </div>
+                </div><br><br><br>
+            <h2>Contact Us</h2>
+            <form action="form_handler.php" method="POST">
+                <label for="name">Name : </label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email : </label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message : </label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <h3>Our Location</h3>
+            <iframe src="https://th.bing.com/th/id/OIP.yGGOArxGFH1UCIyFS_F9NwHaHa?rs=1&pid=ImgDetMain" width="600px" height="450px"frameborder="10"
+            style="border: 100px;" allowfullscreen=""aria-hidden="false"tabindex="10"></iframe>
+        </div>
+        <special-footer></special-footer>
+        <script src="./light.js"></script>
+    </body>
+</html>
